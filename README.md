@@ -44,7 +44,7 @@ openl3 ./sonyc_ust_linus_all_files --content-type env --input-repr mel256 --embe
 Clone this repository
 ```shell
 git clone https://github.com/linusng/sonyc-ust-challenge-2019.git
-cd sonyc-ust-challenge-2019
+cd sonyc-ust-challenge-2019/urban-sound-tagging
 ```
 
 Train our submitted model 1
@@ -83,3 +83,6 @@ python classify_l3.py ./annotations_3.csv $SONYC_UST_PATH/data/dcase-ust-taxonom
 # Coarse-level
 python classify_l3.py ./annotations_3.csv $SONYC_UST_PATH/data/dcase-ust-taxonomy.yaml $SONYC_UST_PATH/features/l3mel256emb512 $SONYC_UST_PATH/output baseline_coarse --label_mode coarse --num_hidden_layers 3 --hidden_layer_size 256 --num_eopchs 20
 ```
+
+## Contact
+Please feel free to contact me at linusng@outlook.com if you have any questions regarding replicating the system outputs.
